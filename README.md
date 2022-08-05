@@ -30,3 +30,9 @@ Example payloads can be found in the "Example Payloads" folder.
 Follina detection requires Sysmon to be installed to log events. Our detection methods here rely on finding instances where Microsoft Word calls MSDT.exe, but the scripts can be modified to search for other artifacts such as the arguments used by Follina in its Powershell command. The following tools are available:
 - The Python scripts in the Sysmon Search folder allow a user to search their Sysmon logs for possible indicators of compromise by Follina and then manually examine those logs for confirmation.
 - The msdt_exp-del-v3.ps1 Powershell script performs a similar search and, if it detects signs of Follina, makes a backup of the MSDT registry key and disables MSDT by deleting the key.
+
+# Using Example Payloads
+All example docx and rtf files html files are pointed at payloads hosted at IP address 10.0.2.15. Additionally, if you want to use the reverse shell exploit, set up a listener on port 9999.
+- Click Me!.docx will Rick Roll the user
+- No Click Exploit.rtf will open a reverse shell
+- I'm Too Sneaky For Defender.docx will function even if Windows Defender's Real-Time Protection is enabled and will execute a SearchNightmare attack, opening up a search for Procmon

@@ -24,3 +24,6 @@ Examples:
 Example payloads can be found in the "Example Payloads" folder.
 
 # Defensive Tools
+Follina detection requires Sysmon to be installed to log events. Our detection methods here rely on finding instances where Microsoft Word calls MSDT.exe, but the scripts can be modified to search for other artifacts such as the arguments used by Follina in its Powershell command. The following tools are available:
+- The Python scripts in the Sysmon Search folder allow a user to search their Sysmon logs for possible indicators of compromise by Follina and then manually examine those logs for confirmation.
+- The msdt_exp-del-v3.ps1 Powershell script performs a similar search and, if it detects signs of Follina, makes a backup of the MSDT registry key and disables MSDT by deleting the key.

